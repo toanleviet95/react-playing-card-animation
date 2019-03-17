@@ -1,4 +1,4 @@
-# React sample code with Webpack
+# React playing card animation
 [![Build Status][build-badge]][build]
 ### This is my React starter kit in some my projects. Use webpack + babel
 
