@@ -32,9 +32,6 @@ npm run build // or yarn build
 
 ## Contributors ✨
 
-## LICENSE
-
-[MIT](LICENSE)
 
 [babeljs]: https://babeljs.io
 [webpack]: https://webpack.js.org
