@@ -36,5 +36,5 @@ npm run build // or yarn build
 [babeljs]: https://babeljs.io
 [webpack]: https://webpack.js.org
 [react-hot-loader]: https://github.com/gaearon/react-hot-loader
-[build-badge]: https://travis-ci.com/toanleviet95/react-sample-with-webpack.svg?branch=master
-[build]: https://travis-ci.com/toanleviet95/react-sample-with-webpack
+[build-badge]: https://travis-ci.com/toanleviet95/react-playing-card-animation.svg?branch=master
+[build]: https://travis-ci.com/toanleviet95/react-playing-card-animation
