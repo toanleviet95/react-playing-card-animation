@@ -30,6 +30,8 @@ npm start // or yarn start
 npm run build // or yarn build
 ```
 
+## Contributors ✨
+
 [babeljs]: https://babeljs.io
 [webpack]: https://webpack.js.org
 [react-hot-loader]: https://github.com/gaearon/react-hot-loader
