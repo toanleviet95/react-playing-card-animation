@@ -1,4 +1,5 @@
 # React playing card animation
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![Build Status][build-badge]][build]
 ### This is my React starter kit in some my projects. Use webpack + babel
 
@@ -32,6 +33,11 @@ npm run build // or yarn build
 
 ## Contributors ✨
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="https://leviettoan.herokuapp.com"><img src="https://avatars3.githubusercontent.com/u/18593292?v=4" width="100px;" alt="Lê Viết Toàn"/><br /><sub><b>Lê Viết Toàn</b></sub></a><br /><a href="https://github.com/toanleviet95/react-playing-card-animation/commits?author=toanleviet95" title="Code">💻</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [babeljs]: https://babeljs.io
 [webpack]: https://webpack.js.org
