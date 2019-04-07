@@ -1,9 +1,10 @@
 import React from 'react'
 import Card from '../Card';
+import PropTypes from 'prop-types';
 
 import './styles.scss';
 
-const StackCard = ({ stacked, degreeAnimated, shuffleAnimated, drawAnimated }) => {
+const StackCards = ({ stacked, degreeAnimated, shuffleAnimated, drawAnimated }) => {
 
   const renderStack = () => {
     let element = [];
@@ -18,7 +19,7 @@ const StackCard = ({ stacked, degreeAnimated, shuffleAnimated, drawAnimated }) =
       let step = degreeAnimated.deg/degreeAnimated.count;
       let angle = 0;
       for (let i = 0; i < degreeAnimated.count; i++) {
-        element = [...element, <Card number={7} type='spades' suit={<span class="suit">&spades;</span>} style={{ transform: `rotate(${angle * 1}deg)`, boxShadow: 'none', transformOrigin: '20% 80%' }} key={i} />];
+        element = [...element, <Card number={7} type='spades' suit={<span className="suit">&spades;</span>} style={{ transform: `rotate(${angle * 1}deg)`, boxShadow: 'none', transformOrigin: '20% 80%' }} key={i} />];
         angle += step;
       }
     } else if (shuffleAnimated) {
@@ -51,20 +52,35 @@ const StackCard = ({ stacked, degreeAnimated, shuffleAnimated, drawAnimated }) =
 
   return <React.Fragment>
     {renderStack()}
-    <ul class="hand">
+    {/* <ul className="hand">
       <li>
-        <Card number={7} type='spades' suit={<span class="suit">&spades;</span>} />
+        <Card number={7} type='spades' suit={<span className="suit">&spades;</span>} />
       </li>
       <li>
-      <Card number={7} type='spades' suit={<span class="suit">&spades;</span>} />
+      <Card number={7} type='spades' suit={<span className="suit">&spades;</span>} />
 
       </li>
       <li>
-      <Card number={7} type='spades' suit={<span class="suit">&spades;</span>} />
+      <Card number={7} type='spades' suit={<span className="suit">&spades;</span>} />
 
       </li>
-    </ul>
+    </ul> */}
   </React.Fragment>
 }
 
-export default StackCard
+
+StackCards.propTypes = {
+  stacked: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  degreeAnimated: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  shuffleAnimated: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  drawAnimated: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+}
+
+StackCards.defaultProps = {
+  stacked: { count: 4, margin: 2 },
+  degreeAnimated: false, // { count: 52, deg: 360 },
+  shuffleAnimated: false, // { count: 4 },
+  drawAnimated: false // { count: 14 }
+}
+
+export default StackCards
